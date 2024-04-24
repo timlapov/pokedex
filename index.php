@@ -30,6 +30,7 @@ include_once ("block/header.php");
                 <div class="card-body">
                     <h5 class="card-title"><?=$pokemon['nameFr']?></h5>
                     <p class="card-text"><?=$pokemon['category']?></p>
+                    <a href="pokemonDetail.php?id=<?=$pokemon['id']?>" class="btn btn-sm btn-secondary">Read More</a>
                 </div>
                 <div class="card-footer">
                     <small class="text-body-secondary"><?=$pokemon['nameJp']?></small>
