@@ -1,5 +1,5 @@
 <?php
-require_once ("utils/connectDB.php");
+require_once("utils/databaseManager.php");
 
 $title = "Pokedex";
 try {
@@ -11,8 +11,9 @@ try {
     exit;
 }
 
-$pokemons = $pdo->query("SELECT * FROM pokemon");
+//$pokemons = $pdo->query("SELECT * FROM pokemon");
 //var_dump($reponse->fetchAll());
+$pokemons = findAllPokemons($pdo);
 
 include_once ("block/header.php");
 ?>

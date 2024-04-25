@@ -1,5 +1,5 @@
 <?php
-require_once("connectDB.php");
+require_once("databaseManager.php");
 
 // URL de l'API Tyradex
 $url = 'https://tyradex.tech/api/v1/pokemon';
